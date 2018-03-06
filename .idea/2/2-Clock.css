@@ -1,0 +1,45 @@
+html{
+    background-color: #cbfff5;
+}
+.border{
+    border-radius: 100%;
+    border: 15px solid black;
+    box-shadow: 0 0 50px white;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20vh;
+    background-color: white;
+    z-index: -1;
+}
+.long{
+    background-color: lightgrey;
+    height: 6px;
+    width: 130px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+}
+.medium{
+    background-color: grey;
+    height: 9px;
+    width: 100px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+
+}
+.short{
+    background-color: black;
+    height: 12px;
+    width: 70px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+
+}
+
