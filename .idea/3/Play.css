@@ -1,0 +1,26 @@
+html{
+    background-color: darkolivegreen;
+}
+.header{
+}
+input{
+    display: block;
+    margin-bottom: 2%;
+}
+h1{
+    color: white;
+    font-weight: bold;
+}
+span{
+    color: lightgoldenrodyellow;
+}
+label{
+    color: white;
+    font-weight: 300;
+}
+.container{
+    background-color: lightgoldenrodyellow;
+    padding: 2%;
+    display: inline-block;
+}
+
