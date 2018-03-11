@@ -16,30 +16,29 @@ html{
     background-color: lightgrey;
     height: 6px;
     width: 130px;
-    position: relative;
-    top: 50%;
+    position: absolute;
+    top: 45%;
     left: 50%;
     z-index: 1;
-
+    transform-origin: top left;
 }
 .medium{
     background-color: grey;
-    height: 9px;
+    height: 6px;
     width: 100px;
-    position: relative;
-    top: 50%;
+    position: absolute;
+    top: 45%;
     left: 50%;
     z-index: 2;
-
+    transform-origin: top left;
 }
 .short{
     background-color: black;
-    height: 12px;
+    height: 6px;
     width: 70px;
-    position: relative;
-    top: 50%;
+    position: absolute;
+    top: 45%;
     left: 50%;
     z-index: 3;
-
+    transform-origin: top left;
 }
-
