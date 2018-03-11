@@ -1,7 +1,10 @@
+:root{
+    --baseColor: #fafad2;
+    --blur: 0px;
+    --spacing: 10px;
+}
 html{
     background-color: darkolivegreen;
-}
-.header{
 }
 input{
     display: block;
@@ -12,15 +15,16 @@ h1{
     font-weight: bold;
 }
 span{
-    color: lightgoldenrodyellow;
+    color: var(--baseColor);
 }
 label{
     color: white;
     font-weight: 300;
 }
 .container{
-    background-color: lightgoldenrodyellow;
-    padding: 2%;
+    background-color: var(--baseColor);
+    padding: var(--spacing);
     display: inline-block;
+    filter: blur(var(--blur));
 }
 

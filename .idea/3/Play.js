@@ -1,22 +1,9 @@
-var container =document.querySelector(".container");
-var span =document.querySelector("span");
-
-document.querySelector('input#spacing')
-    .addEventListener('input', function (e) {
-        console.log(e.target.value);
-    container.style.padding =e.target.value+"px";
-    e.preventDefault()
-});
-
-document.querySelector('input#blur')
-    .addEventListener('input', function (e) {
-    container.style.filter = "blur("+e.target.value+")";
-    e.preventDefault()
-});
-
-document.querySelector('input#baseColor')
-    .addEventListener('input', function (e) {
-    container.style.backgroundColor =e.target.value;
-    span.style.color =e.target.value;
-    e.preventDefault()
+const inputs =document.querySelectorAll('input');
+function handle() {
+    const suffix = this.dataset.unit || "";
+    console.log(this.id);
+    document.documentElement.style.setProperty('--'+this.id, this.value+suffix);
+}
+inputs.forEach(function (input) {
+    input.addEventListener('change', handle)
 });
