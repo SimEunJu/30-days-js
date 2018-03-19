@@ -5,5 +5,5 @@ function handle() {
     document.documentElement.style.setProperty('--'+this.id, this.value+suffix);
 }
 inputs.forEach(function (input) {
-    input.addEventListener('change', handle)
+    input.addEventListener('change', handle);
 });

@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: stretch;
+    width: inherit;
+    height: inherit;
+}
+div div{
+    box-shadow :inset 0 0 0 5px rgba(255,255,255,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex :1;
+    transition: font-size 0.7s cubic-bezier(0,0,1,1),
+                flex 0.7s cubic-bezier(0,0,1,1),
+                background 0.2s;
+}
+div > p{
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s;
+}
+div > p:first-child{
+    transform: translateY(-100%);
+}
+.openFont{
+    transform: translateY(0);
+}
+div > p:last-child{
+    transform: translateY(100%);
+}
+.open{
+    flex: 5;
+    font-size: 2em;
+}
+.one{
+    background-color: darkolivegreen;
+}
+.two{
+    background-color: goldenrod;
+}
+.three{
+    background-color: greenyellow;
+}
+.four{
+    background-color: palegreen;
+}
+.five{
+    background-color: green;
+}
+
