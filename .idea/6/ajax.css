@@ -1,5 +1,7 @@
-*{
+html{
     background-color: seagreen;
+}
+*{
     box-sizing: border-box;
 }
 .container{
@@ -27,4 +29,7 @@ input{
     font-size: 30px;
     border-radius: 5px;
     width: 100%;
+}
+.highlight{
+    background-color: seagreen;
 }

@@ -16,13 +16,17 @@ function match(matchWord, cities){
 }
 
 function display(){
-    var matchedCity =match(this.value, cities);
-    matchedCity.forEach(function(city) {
-        var item =document.createElement("li");
-        item.innerHTML =city.city;
-        input.appendChild(item);
-    });
-}
+    var ul =document.querySelector('ul');
+    const val =this.value;
+    var matchedCity =match(val, cities);
+    const regex = new RegExp(val, 'gi');
+    ul.innerHTML =matchedCity.map(function(city) {
+        const hiCity = city.city.replace(regex, '<span class="highlight">'+val+'</span>');
+        const hiState =city.state.replace(regex, '<span class="highlight">'+val+'</span>');
+        return '<li>'+hiCity+'/'+hiState+'</li>';
+    }).join('');
 
+}
 var input =document.querySelector("input");
 input.addEventListener('keyup', display);
+input.addEventListener('change', display);
