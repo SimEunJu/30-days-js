@@ -20,7 +20,7 @@ function display(){
     const val =this.value;
     var matchedCity =match(val, cities);
     const regex = new RegExp(val, 'gi');
-    ul.innerHTML =matchedCity.map(function(city) {
+    ul.innerHTML=matchedCity.map(function(city) {
         const hiCity = city.city.replace(regex, '<span class="highlight">'+val+'</span>');
         const hiState =city.state.replace(regex, '<span class="highlight">'+val+'</span>');
         return '<li>'+hiCity+'/'+hiState+'</li>';

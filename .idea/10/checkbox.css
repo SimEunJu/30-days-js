@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: darkkhaki;
+}
+.container{
+    background-color: white;
+    margin: 50px auto;
+    max-width: 40%;
+}
+.item{
+    border: 1px solid grey;
+    display: flex;
+}
+p{
+    border-left: 1px solid grey;
+    padding-left: 5px;
+    width: 100%;
+    margin: 0;
+
+}
